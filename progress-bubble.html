@@ -60,7 +60,7 @@
                 stroke-width$="[[strokeWidth]]"
                 stroke-dasharray$="[[_dasharray]]"
                 stroke-dashoffset$="[[_dashoffset]]"
-                stroke-linecap="round"
+                stroke-linecap="[[strokeLinecap]]"
                 transform$="[[_transform]]" />
         </svg>
         <div id="reflection"></div>
@@ -83,6 +83,10 @@
             strokeWidth: {
                 type: Number,
                 value: 6
+            },
+            strokeLinecap: {
+                type: String,
+                value: 'round'
             },
             _cx: {
                 type: Number,
